@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body{
+    
+    background-image: url("school.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 100%; 
+  }
+#ip{
+  width: 87%;
+  color:black;
+  
+}
+.container{
+  padding-top: 20px;
+
+}
+.form-group{
+  padding-left: 15%;
+}
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center " style="margin-top:0; background-color: black; color: blanchedalmond;">
+  <h1>Survey Form</h1> 
+</div>
+
+  <form class="container col-lg-5 font-weight-bold bg-light" style="padding-bottom:10px;">
+    
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" class="form-control mb-2 mr-sm-2" placeholder="Enter your name" id="ip">
+    </div>
+    <div class="form-group ">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" class="form-control" id="ip" placeholder="Enter your Email" >
+    </div>
+    <div class="form-group">
+      <label id="like-label" for="like"
+        >What did you like most about this training?<span class="clue">(optional)</span></label
+      >
+      <input type="text"   id="ip"  min="10"   max="99" class="form-control" placeholder="Enter ....">
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="ip" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Intern</option>
+        <option value="job">New Joinee</option>
+        <option value="learner">Experience</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea  class="input-textarea" rows="3" cols="50"  placeholder="Enter your comment here..." ></textarea>
+    </div>
+
+    <div class="form-group" style="padding-left: 40%; font-weight: bold;">
+      <button type="submit" id="submit" class="submit-button" >
+        Submit
+      </button>
+    </div>
+  </form>
+
+
+
+<div class="jumbotron text-center" style="margin-bottom:0; background-color: black; margin-top: 20px;">
+  <h1>Footer</h1>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
